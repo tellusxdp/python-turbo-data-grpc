@@ -1,3 +1,4 @@
+import os
 import grpc
 from grpcturbodata import turbodata_pb2_grpc as pb2_grpc
 from grpcturbodata import turbodata_pb2 as pb2
@@ -49,7 +50,9 @@ class Const:
 
 class mapPSEngine:
 
-    def __init__(self, address='localhost:50051'):
+    def __init__(self, address=""):
+        if not address:
+            address = os.environ.get("TURBODATA_HOST", "localhost:50051")
         self.channel = grpc.insecure_channel(address)
         self.stub = pb2_grpc.DataStoreStub(self.channel)
 
