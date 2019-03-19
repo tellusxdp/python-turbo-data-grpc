@@ -4,7 +4,7 @@ import grpc
 from grpcturbodata import turbodata_pb2 as turbodata_dot_grpc_dot_turbodata__pb2
 
 
-class DataStoreStub(object):
+class DataSourceStub(object):
   # missing associated documentation comment in .proto file
   pass
 
@@ -15,203 +15,203 @@ class DataStoreStub(object):
       channel: A grpc.Channel.
     """
     self.AddRealFilter = channel.unary_unary(
-        '/turbodata.DataStore/AddRealFilter',
+        '/turbodata.DataSource/AddRealFilter',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.AddRealFilterRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.AddRealFilterResponse.FromString,
         )
     self.Calc = channel.unary_unary(
-        '/turbodata.DataStore/Calc',
+        '/turbodata.DataSource/Calc',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.CalcRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.CalcResponse.FromString,
         )
     self.Catalog = channel.unary_unary(
-        '/turbodata.DataStore/Catalog',
+        '/turbodata.DataSource/Catalog',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.CatalogRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.CatalogResponse.FromString,
         )
     self.Categorize = channel.unary_unary(
-        '/turbodata.DataStore/Categorize',
+        '/turbodata.DataSource/Categorize',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.CategorizeRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.CategorizeResponse.FromString,
         )
     self.ClearWS = channel.unary_unary(
-        '/turbodata.DataStore/ClearWS',
+        '/turbodata.DataSource/ClearWS',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.ClearWSRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.ClearWSResponse.FromString,
         )
     self.Condense = channel.unary_unary(
-        '/turbodata.DataStore/Condense',
+        '/turbodata.DataSource/Condense',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.CondenseRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.CondenseResponse.FromString,
         )
     self.CreateJoin = channel.unary_unary(
-        '/turbodata.DataStore/CreateJoin',
+        '/turbodata.DataSource/CreateJoin',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.CreateJoinRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.CreateJoinResponse.FromString,
         )
     self.CreateTable = channel.unary_unary(
-        '/turbodata.DataStore/CreateTable',
+        '/turbodata.DataSource/CreateTable',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.CreateTableRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.CreateTableResponse.FromString,
         )
     self.DBCodeSet = channel.unary_unary(
-        '/turbodata.DataStore/DBCodeSet',
+        '/turbodata.DataSource/DBCodeSet',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DBCodeSetRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DBCodeSetResponse.FromString,
         )
     self.DBLoad = channel.unary_unary(
-        '/turbodata.DataStore/DBLoad',
+        '/turbodata.DataSource/DBLoad',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DBLoadRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DBLoadResponse.FromString,
         )
     self.DBSave = channel.unary_unary(
-        '/turbodata.DataStore/DBSave',
+        '/turbodata.DataSource/DBSave',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DBSaveRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DBSaveResponse.FromString,
         )
     self.DelAllSubTables = channel.unary_unary(
-        '/turbodata.DataStore/DelAllSubTables',
+        '/turbodata.DataSource/DelAllSubTables',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DelAllSubTablesRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DelAllSubTablesResponse.FromString,
         )
     self.DeleteRow = channel.unary_unary(
-        '/turbodata.DataStore/DeleteRow',
+        '/turbodata.DataSource/DeleteRow',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DeleteRowRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DeleteRowResponse.FromString,
         )
     self.DelFilter = channel.unary_unary(
-        '/turbodata.DataStore/DelFilter',
+        '/turbodata.DataSource/DelFilter',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DelFilterRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DelFilterResponse.FromString,
         )
     self.Drop = channel.unary_unary(
-        '/turbodata.DataStore/Drop',
+        '/turbodata.DataSource/Drop',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DropRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DropResponse.FromString,
         )
     self.DuplFilter = channel.unary_unary(
-        '/turbodata.DataStore/DuplFilter',
+        '/turbodata.DataSource/DuplFilter',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DuplFilterRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DuplFilterResponse.FromString,
         )
     self.DuplicateTable = channel.unary_unary(
-        '/turbodata.DataStore/DuplicateTable',
+        '/turbodata.DataSource/DuplicateTable',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.DuplicateTableRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.DuplicateTableResponse.FromString,
         )
     self.ExtractSubTable = channel.unary_unary(
-        '/turbodata.DataStore/ExtractSubTable',
+        '/turbodata.DataSource/ExtractSubTable',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.ExtractSubTableRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.ExtractSubTableResponse.FromString,
         )
     self.ExtractUnique = channel.unary_unary(
-        '/turbodata.DataStore/ExtractUnique',
+        '/turbodata.DataSource/ExtractUnique',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.ExtractUniqueRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.ExtractUniqueResponse.FromString,
         )
     self.Fill = channel.unary_unary(
-        '/turbodata.DataStore/Fill',
+        '/turbodata.DataSource/Fill',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.FillRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.FillResponse.FromString,
         )
     self.FilterTransfer = channel.unary_unary(
-        '/turbodata.DataStore/FilterTransfer',
+        '/turbodata.DataSource/FilterTransfer',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.FilterTransferRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.FilterTransferResponse.FromString,
         )
     self.InsertRow = channel.unary_unary(
-        '/turbodata.DataStore/InsertRow',
+        '/turbodata.DataSource/InsertRow',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.InsertRowRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.InsertRowResponse.FromString,
         )
     self.JoinRealize = channel.unary_unary(
-        '/turbodata.DataStore/JoinRealize',
+        '/turbodata.DataSource/JoinRealize',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.JoinRealizeRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.JoinRealizeResponse.FromString,
         )
     self.Load = channel.unary_unary(
-        '/turbodata.DataStore/Load',
+        '/turbodata.DataSource/Load',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.LoadRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.LoadResponse.FromString,
         )
     self.MoveFilter = channel.unary_unary(
-        '/turbodata.DataStore/MoveFilter',
+        '/turbodata.DataSource/MoveFilter',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.MoveFilterRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.MoveFilterResponse.FromString,
         )
     self.Rename = channel.unary_unary(
-        '/turbodata.DataStore/Rename',
+        '/turbodata.DataSource/Rename',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.RenameRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.RenameResponse.FromString,
         )
     self.RenameFilter = channel.unary_unary(
-        '/turbodata.DataStore/RenameFilter',
+        '/turbodata.DataSource/RenameFilter',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.RenameFilterRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.RenameFilterResponse.FromString,
         )
     self.Save = channel.unary_unary(
-        '/turbodata.DataStore/Save',
+        '/turbodata.DataSource/Save',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SaveRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SaveResponse.FromString,
         )
     self.Search = channel.unary_unary(
-        '/turbodata.DataStore/Search',
+        '/turbodata.DataSource/Search',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SearchRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SearchResponse.FromString,
         )
     self.SetAND = channel.unary_unary(
-        '/turbodata.DataStore/SetAND',
+        '/turbodata.DataSource/SetAND',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SetANDRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SetANDResponse.FromString,
         )
     self.SetComment = channel.unary_unary(
-        '/turbodata.DataStore/SetComment',
+        '/turbodata.DataSource/SetComment',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SetCommentRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SetCommentResponse.FromString,
         )
     self.SetDelete = channel.unary_unary(
-        '/turbodata.DataStore/SetDelete',
+        '/turbodata.DataSource/SetDelete',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SetDeleteRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SetDeleteResponse.FromString,
         )
     self.SetNOT = channel.unary_unary(
-        '/turbodata.DataStore/SetNOT',
+        '/turbodata.DataSource/SetNOT',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SetNOTRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SetNOTResponse.FromString,
         )
     self.SetOR = channel.unary_unary(
-        '/turbodata.DataStore/SetOR',
+        '/turbodata.DataSource/SetOR',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SetORRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SetORResponse.FromString,
         )
     self.SetSUB = channel.unary_unary(
-        '/turbodata.DataStore/SetSUB',
+        '/turbodata.DataSource/SetSUB',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SetSUBRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SetSUBResponse.FromString,
         )
     self.Sort = channel.unary_unary(
-        '/turbodata.DataStore/Sort',
+        '/turbodata.DataSource/Sort',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.SortRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.SortResponse.FromString,
         )
     self.TextWrite = channel.unary_unary(
-        '/turbodata.DataStore/TextWrite',
+        '/turbodata.DataSource/TextWrite',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.TextWriteRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.TextWriteResponse.FromString,
         )
     self.Union = channel.unary_unary(
-        '/turbodata.DataStore/Union',
+        '/turbodata.DataSource/Union',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.UnionRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.UnionResponse.FromString,
         )
     self.XSum = channel.unary_unary(
-        '/turbodata.DataStore/XSum',
+        '/turbodata.DataSource/XSum',
         request_serializer=turbodata_dot_grpc_dot_turbodata__pb2.XSumRequest.SerializeToString,
         response_deserializer=turbodata_dot_grpc_dot_turbodata__pb2.XSumResponse.FromString,
         )
 
 
-class DataStoreServicer(object):
+class DataSourceServicer(object):
   # missing associated documentation comment in .proto file
   pass
 
@@ -489,7 +489,7 @@ class DataStoreServicer(object):
     raise NotImplementedError('Method not implemented!')
 
 
-def add_DataStoreServicer_to_server(servicer, server):
+def add_DataSourceServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'AddRealFilter': grpc.unary_unary_rpc_method_handler(
           servicer.AddRealFilter,
@@ -688,5 +688,5 @@ def add_DataStoreServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'turbodata.DataStore', rpc_method_handlers)
+      'turbodata.DataSource', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

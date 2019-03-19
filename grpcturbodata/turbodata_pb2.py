@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='turbodata',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x1eturbodata/grpc/turbodata.proto\x12\tturbodata\"\x8d\x01\n\x14\x41\x64\x64RealFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x13\n\x0b\x61\x64\x64Position\x18\x02 \x01(\t\x12\x15\n\rnewFilterName\x18\x03 \x01(\t\x12\x12\n\nfilterType\x18\x04 \x01(\t\x12\x10\n\x08\x66ilePath\x18\x05 \x01(\t\x12\x10\n\x08\x66ileName\x18\x06 \x01(\t\",\n\x15\x41\x64\x64RealFilterResponse\x12\x13\n\x0b\x66ilterCount\x18\x01 \x01(\x03\"x\n\x0b\x43\x61lcRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x10\n\x08startRow\x18\x03 \x01(\x03\x12\x10\n\x08rowCount\x18\x04 \x01(\x03\x12\x0f\n\x07\x63\x61lsStr\x18\x05 \x01(\t\x12\r\n\x05setID\x18\x06 \x01(\x03\"\x1e\n\x0c\x43\x61lcResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"g\n\x0e\x43\x61talogRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x0f\n\x07\x63\x61tPath\x18\x02 \x01(\t\x12\x0f\n\x07\x63\x61tName\x18\x03 \x01(\t\x12\x0f\n\x07srcPath\x18\x04 \x01(\t\x12\x0f\n\x07srcName\x18\x05 \x01(\t\"!\n\x0f\x43\x61talogResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"P\n\x11\x43\x61tegorizeRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x14\n\x0c\x63\x61tTableName\x18\x03 \x01(\t\"$\n\x12\x43\x61tegorizeResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\x10\n\x0e\x43learWSRequest\"!\n\x0f\x43learWSResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"$\n\x0f\x43ondenseRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\"\"\n\x10\x43ondenseResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\xae\x01\n\x11\x43reateJoinRequest\x12\x12\n\njTableName\x18\x01 \x01(\t\x12\x12\n\nmTableName\x18\x02 \x01(\t\x12\x12\n\nsTableName\x18\x03 \x01(\t\x12\x0e\n\x06mSetID\x18\x04 \x01(\x03\x12\x0e\n\x06sSetID\x18\x05 \x01(\x03\x12\x14\n\x0cmJoinKeyList\x18\x06 \x01(\t\x12\x14\n\x0csJoinKeyList\x18\x07 \x01(\t\x12\x11\n\tisInOrOut\x18\x08 \x01(\t\"%\n\x12\x43reateJoinResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"9\n\x12\x43reateTableRequest\x12\x10\n\x08rowCount\x18\x01 \x01(\x03\x12\x11\n\ttableName\x18\x02 \x01(\t\"&\n\x13\x43reateTableResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"\"\n\x10\x44\x42\x43odeSetRequest\x12\x0e\n\x06\x64\x62\x43ode\x18\x01 \x01(\t\"#\n\x11\x44\x42\x43odeSetResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"4\n\rDBLoadRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\tworkSpace\x18\x02 \x01(\t\" \n\x0e\x44\x42LoadResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"4\n\rDBSaveRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\tworkSpace\x18\x02 \x01(\t\" \n\x0e\x44\x42SaveResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"+\n\x16\x44\x65lAllSubTablesRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\")\n\x17\x44\x65lAllSubTablesResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"X\n\x10\x44\x65leteRowRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x10\n\x08startRow\x18\x02 \x01(\x03\x12\x10\n\x08rowCount\x18\x03 \x01(\x03\x12\r\n\x05setID\x18\x04 \x01(\x03\"#\n\x11\x44\x65leteRowResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"9\n\x10\x44\x65lFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\"#\n\x11\x44\x65lFilterResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\" \n\x0b\x44ropRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\"\x1e\n\x0c\x44ropResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\":\n\x11\x44uplFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\"&\n\x12\x44uplFilterResponse\x12\x10\n\x08\x66ilterID\x18\x01 \x01(\x03\"*\n\x15\x44uplicateTableRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\")\n\x16\x44uplicateTableResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"\x96\x01\n\x16\x45xtractSubTableRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x03\x12\x16\n\x0eincludeTableID\x18\x03 \x01(\t\x12\x14\n\x0cincludeRecNo\x18\x04 \x01(\t\x12\x16\n\x0e\x66ilterNameList\x18\x05 \x01(\t\x12\x14\n\x0cnewTableName\x18\x06 \x01(\t\")\n\x17\x45xtractSubTableResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"g\n\x14\x45xtractUniqueRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x03\x12\x16\n\x0e\x66ilterNameList\x18\x03 \x01(\t\x12\x15\n\rkeepOrigOrder\x18\x04 \x01(\t\"\'\n\x15\x45xtractUniqueResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"}\n\x0b\x46illRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x10\n\x08startRow\x18\x03 \x01(\x04\x12\x10\n\x08rowCount\x18\x04 \x01(\x04\x12\x14\n\x0c\x64\x61taToUpdate\x18\x05 \x01(\t\x12\r\n\x05setID\x18\x06 \x01(\x04\"\x1e\n\x0c\x46illResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"C\n\x15\x46ilterTransferRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x17\n\x0fslaveFilterList\x18\x02 \x01(\t\"(\n\x16\x46ilterTransferResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"I\n\x10InsertRowRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x10\n\x08startRow\x18\x02 \x01(\x03\x12\x10\n\x08rowCount\x18\x03 \x01(\x03\"#\n\x11InsertRowResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\x85\x01\n\x12JoinRealizeRequest\x12\x14\n\x0cnewTableName\x18\x01 \x01(\t\x12\x12\n\nrTablename\x18\x02 \x01(\t\x12\r\n\x05setID\x18\x03 \x01(\x03\x12\x0e\n\x06mRecNo\x18\x04 \x01(\t\x12\x0e\n\x06sRecNo\x18\x05 \x01(\t\x12\x16\n\x0e\x66ilterNameList\x18\x06 \x01(\t\"%\n\x13JoinRealizeResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"2\n\x0bLoadRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\ttableName\x18\x02 \x01(\t\"\x1f\n\x0cLoadResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"L\n\x11MoveFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterFrom\x18\x02 \x01(\t\x12\x10\n\x08\x66ilterTo\x18\x03 \x01(\t\"$\n\x12MoveFilterResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"8\n\rRenameRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x14\n\x0cnewTableName\x18\x02 \x01(\t\" \n\x0eRenameResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"S\n\x13RenameFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x15\n\rnewFilterName\x18\x03 \x01(\t\"&\n\x14RenameFilterResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"2\n\x0bSaveRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\ttableName\x18\x02 \x01(\t\"\x1e\n\x0cSaveResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"X\n\rSearchRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\r\n\x05setID\x18\x03 \x01(\x04\x12\x11\n\tsrcString\x18\x04 \x01(\t\" \n\x0eSearchResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"D\n\rSetANDRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\" \n\x0eSetANDResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"F\n\x11SetCommentRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x0f\n\x07\x63mntStr\x18\x03 \x01(\t\"$\n\x12SetCommentResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"4\n\x10SetDeleteRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\"#\n\x11SetDeleteResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"D\n\rSetNOTRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\" \n\x0eSetNOTResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"C\n\x0cSetORRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\"\x1f\n\rSetORResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"D\n\rSetSUBRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\" \n\x0eSetSUBResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"U\n\x0bSortRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\r\n\x05setID\x18\x03 \x01(\x04\x12\x10\n\x08sortType\x18\x04 \x01(\t\"\x1e\n\x0cSortResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\xc9\x01\n\x10TextWriteRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x11\n\tdelimiter\x18\x02 \x01(\t\x12\x10\n\x08\x66ilePath\x18\x03 \x01(\t\x12\x10\n\x08\x66ileName\x18\x04 \x01(\t\x12\x10\n\x08writeTop\x18\x05 \x01(\x03\x12\x13\n\x0bwriteBottom\x18\x06 \x01(\x03\x12\x11\n\twriteLeft\x18\x07 \x01(\x03\x12\x12\n\nwriteRight\x18\x08 \x01(\x03\x12\x0e\n\x06header\x18\t \x01(\t\x12\r\n\x05setID\x18\n \x01(\x04\"#\n\x11TextWriteResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\xdd\x01\n\x0cUnionRequest\x12\x14\n\x0cnewTableName\x18\x01 \x01(\t\x12\x12\n\ntableName1\x18\x02 \x01(\t\x12\x12\n\ntableName2\x18\x03 \x01(\t\x12\x0e\n\x06setID1\x18\x04 \x01(\x04\x12\x0e\n\x06setID2\x18\x05 \x01(\x04\x12\x12\n\nfilterIDs1\x18\x06 \x01(\t\x12\x12\n\nfilterIDs2\x18\x07 \x01(\t\x12\x16\n\x0eincludeTableID\x18\x08 \x01(\t\x12\x17\n\x0fincludeRecordNo\x18\t \x01(\t\x12\x16\n\x0e\x64\x65leteOriginal\x18\n \x01(\t\" \n\rUnionResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"U\n\x0bXSumRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdItemList\x18\x03 \x01(\t\x12\x11\n\tmItemList\x18\x04 \x01(\t\"\x1e\n\x0cXSumResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\x32\x80\x16\n\tDataStore\x12T\n\rAddRealFilter\x12\x1f.turbodata.AddRealFilterRequest\x1a .turbodata.AddRealFilterResponse\"\x00\x12\x39\n\x04\x43\x61lc\x12\x16.turbodata.CalcRequest\x1a\x17.turbodata.CalcResponse\"\x00\x12\x42\n\x07\x43\x61talog\x12\x19.turbodata.CatalogRequest\x1a\x1a.turbodata.CatalogResponse\"\x00\x12K\n\nCategorize\x12\x1c.turbodata.CategorizeRequest\x1a\x1d.turbodata.CategorizeResponse\"\x00\x12\x42\n\x07\x43learWS\x12\x19.turbodata.ClearWSRequest\x1a\x1a.turbodata.ClearWSResponse\"\x00\x12\x45\n\x08\x43ondense\x12\x1a.turbodata.CondenseRequest\x1a\x1b.turbodata.CondenseResponse\"\x00\x12K\n\nCreateJoin\x12\x1c.turbodata.CreateJoinRequest\x1a\x1d.turbodata.CreateJoinResponse\"\x00\x12N\n\x0b\x43reateTable\x12\x1d.turbodata.CreateTableRequest\x1a\x1e.turbodata.CreateTableResponse\"\x00\x12H\n\tDBCodeSet\x12\x1b.turbodata.DBCodeSetRequest\x1a\x1c.turbodata.DBCodeSetResponse\"\x00\x12?\n\x06\x44\x42Load\x12\x18.turbodata.DBLoadRequest\x1a\x19.turbodata.DBLoadResponse\"\x00\x12?\n\x06\x44\x42Save\x12\x18.turbodata.DBSaveRequest\x1a\x19.turbodata.DBSaveResponse\"\x00\x12Z\n\x0f\x44\x65lAllSubTables\x12!.turbodata.DelAllSubTablesRequest\x1a\".turbodata.DelAllSubTablesResponse\"\x00\x12H\n\tDeleteRow\x12\x1b.turbodata.DeleteRowRequest\x1a\x1c.turbodata.DeleteRowResponse\"\x00\x12H\n\tDelFilter\x12\x1b.turbodata.DelFilterRequest\x1a\x1c.turbodata.DelFilterResponse\"\x00\x12\x39\n\x04\x44rop\x12\x16.turbodata.DropRequest\x1a\x17.turbodata.DropResponse\"\x00\x12K\n\nDuplFilter\x12\x1c.turbodata.DuplFilterRequest\x1a\x1d.turbodata.DuplFilterResponse\"\x00\x12W\n\x0e\x44uplicateTable\x12 .turbodata.DuplicateTableRequest\x1a!.turbodata.DuplicateTableResponse\"\x00\x12Z\n\x0f\x45xtractSubTable\x12!.turbodata.ExtractSubTableRequest\x1a\".turbodata.ExtractSubTableResponse\"\x00\x12T\n\rExtractUnique\x12\x1f.turbodata.ExtractUniqueRequest\x1a .turbodata.ExtractUniqueResponse\"\x00\x12\x39\n\x04\x46ill\x12\x16.turbodata.FillRequest\x1a\x17.turbodata.FillResponse\"\x00\x12W\n\x0e\x46ilterTransfer\x12 .turbodata.FilterTransferRequest\x1a!.turbodata.FilterTransferResponse\"\x00\x12H\n\tInsertRow\x12\x1b.turbodata.InsertRowRequest\x1a\x1c.turbodata.InsertRowResponse\"\x00\x12N\n\x0bJoinRealize\x12\x1d.turbodata.JoinRealizeRequest\x1a\x1e.turbodata.JoinRealizeResponse\"\x00\x12\x39\n\x04Load\x12\x16.turbodata.LoadRequest\x1a\x17.turbodata.LoadResponse\"\x00\x12K\n\nMoveFilter\x12\x1c.turbodata.MoveFilterRequest\x1a\x1d.turbodata.MoveFilterResponse\"\x00\x12?\n\x06Rename\x12\x18.turbodata.RenameRequest\x1a\x19.turbodata.RenameResponse\"\x00\x12Q\n\x0cRenameFilter\x12\x1e.turbodata.RenameFilterRequest\x1a\x1f.turbodata.RenameFilterResponse\"\x00\x12\x39\n\x04Save\x12\x16.turbodata.SaveRequest\x1a\x17.turbodata.SaveResponse\"\x00\x12?\n\x06Search\x12\x18.turbodata.SearchRequest\x1a\x19.turbodata.SearchResponse\"\x00\x12?\n\x06SetAND\x12\x18.turbodata.SetANDRequest\x1a\x19.turbodata.SetANDResponse\"\x00\x12K\n\nSetComment\x12\x1c.turbodata.SetCommentRequest\x1a\x1d.turbodata.SetCommentResponse\"\x00\x12H\n\tSetDelete\x12\x1b.turbodata.SetDeleteRequest\x1a\x1c.turbodata.SetDeleteResponse\"\x00\x12?\n\x06SetNOT\x12\x18.turbodata.SetNOTRequest\x1a\x19.turbodata.SetNOTResponse\"\x00\x12<\n\x05SetOR\x12\x17.turbodata.SetORRequest\x1a\x18.turbodata.SetORResponse\"\x00\x12?\n\x06SetSUB\x12\x18.turbodata.SetSUBRequest\x1a\x19.turbodata.SetSUBResponse\"\x00\x12\x39\n\x04Sort\x12\x16.turbodata.SortRequest\x1a\x17.turbodata.SortResponse\"\x00\x12H\n\tTextWrite\x12\x1b.turbodata.TextWriteRequest\x1a\x1c.turbodata.TextWriteResponse\"\x00\x12<\n\x05Union\x12\x17.turbodata.UnionRequest\x1a\x18.turbodata.UnionResponse\"\x00\x12\x39\n\x04XSum\x12\x16.turbodata.XSumRequest\x1a\x17.turbodata.XSumResponse\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x1eturbodata/grpc/turbodata.proto\x12\tturbodata\"\x8d\x01\n\x14\x41\x64\x64RealFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x13\n\x0b\x61\x64\x64Position\x18\x02 \x01(\t\x12\x15\n\rnewFilterName\x18\x03 \x01(\t\x12\x12\n\nfilterType\x18\x04 \x01(\t\x12\x10\n\x08\x66ilePath\x18\x05 \x01(\t\x12\x10\n\x08\x66ileName\x18\x06 \x01(\t\",\n\x15\x41\x64\x64RealFilterResponse\x12\x13\n\x0b\x66ilterCount\x18\x01 \x01(\x03\"x\n\x0b\x43\x61lcRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x10\n\x08startRow\x18\x03 \x01(\x03\x12\x10\n\x08rowCount\x18\x04 \x01(\x03\x12\x0f\n\x07\x63\x61lsStr\x18\x05 \x01(\t\x12\r\n\x05setID\x18\x06 \x01(\x03\"\x1e\n\x0c\x43\x61lcResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"g\n\x0e\x43\x61talogRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x0f\n\x07\x63\x61tPath\x18\x02 \x01(\t\x12\x0f\n\x07\x63\x61tName\x18\x03 \x01(\t\x12\x0f\n\x07srcPath\x18\x04 \x01(\t\x12\x0f\n\x07srcName\x18\x05 \x01(\t\"!\n\x0f\x43\x61talogResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"P\n\x11\x43\x61tegorizeRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x14\n\x0c\x63\x61tTableName\x18\x03 \x01(\t\"$\n\x12\x43\x61tegorizeResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\x10\n\x0e\x43learWSRequest\"!\n\x0f\x43learWSResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"$\n\x0f\x43ondenseRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\"\"\n\x10\x43ondenseResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\xae\x01\n\x11\x43reateJoinRequest\x12\x12\n\njTableName\x18\x01 \x01(\t\x12\x12\n\nmTableName\x18\x02 \x01(\t\x12\x12\n\nsTableName\x18\x03 \x01(\t\x12\x0e\n\x06mSetID\x18\x04 \x01(\x03\x12\x0e\n\x06sSetID\x18\x05 \x01(\x03\x12\x14\n\x0cmJoinKeyList\x18\x06 \x01(\t\x12\x14\n\x0csJoinKeyList\x18\x07 \x01(\t\x12\x11\n\tisInOrOut\x18\x08 \x01(\t\"%\n\x12\x43reateJoinResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"9\n\x12\x43reateTableRequest\x12\x10\n\x08rowCount\x18\x01 \x01(\x03\x12\x11\n\ttableName\x18\x02 \x01(\t\"&\n\x13\x43reateTableResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"\"\n\x10\x44\x42\x43odeSetRequest\x12\x0e\n\x06\x64\x62\x43ode\x18\x01 \x01(\t\"#\n\x11\x44\x42\x43odeSetResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"4\n\rDBLoadRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\tworkSpace\x18\x02 \x01(\t\" \n\x0e\x44\x42LoadResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"4\n\rDBSaveRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\tworkSpace\x18\x02 \x01(\t\" \n\x0e\x44\x42SaveResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"+\n\x16\x44\x65lAllSubTablesRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\")\n\x17\x44\x65lAllSubTablesResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"X\n\x10\x44\x65leteRowRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x10\n\x08startRow\x18\x02 \x01(\x03\x12\x10\n\x08rowCount\x18\x03 \x01(\x03\x12\r\n\x05setID\x18\x04 \x01(\x03\"#\n\x11\x44\x65leteRowResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"9\n\x10\x44\x65lFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\"#\n\x11\x44\x65lFilterResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\" \n\x0b\x44ropRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\"\x1e\n\x0c\x44ropResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\":\n\x11\x44uplFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\"&\n\x12\x44uplFilterResponse\x12\x10\n\x08\x66ilterID\x18\x01 \x01(\x03\"*\n\x15\x44uplicateTableRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\")\n\x16\x44uplicateTableResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"\x96\x01\n\x16\x45xtractSubTableRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x03\x12\x16\n\x0eincludeTableID\x18\x03 \x01(\t\x12\x14\n\x0cincludeRecNo\x18\x04 \x01(\t\x12\x16\n\x0e\x66ilterNameList\x18\x05 \x01(\t\x12\x14\n\x0cnewTableName\x18\x06 \x01(\t\")\n\x17\x45xtractSubTableResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"g\n\x14\x45xtractUniqueRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x03\x12\x16\n\x0e\x66ilterNameList\x18\x03 \x01(\t\x12\x15\n\rkeepOrigOrder\x18\x04 \x01(\t\"\'\n\x15\x45xtractUniqueResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"}\n\x0b\x46illRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x10\n\x08startRow\x18\x03 \x01(\x04\x12\x10\n\x08rowCount\x18\x04 \x01(\x04\x12\x14\n\x0c\x64\x61taToUpdate\x18\x05 \x01(\t\x12\r\n\x05setID\x18\x06 \x01(\x04\"\x1e\n\x0c\x46illResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"C\n\x15\x46ilterTransferRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x17\n\x0fslaveFilterList\x18\x02 \x01(\t\"(\n\x16\x46ilterTransferResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"I\n\x10InsertRowRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x10\n\x08startRow\x18\x02 \x01(\x03\x12\x10\n\x08rowCount\x18\x03 \x01(\x03\"#\n\x11InsertRowResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\x85\x01\n\x12JoinRealizeRequest\x12\x14\n\x0cnewTableName\x18\x01 \x01(\t\x12\x12\n\nrTablename\x18\x02 \x01(\t\x12\r\n\x05setID\x18\x03 \x01(\x03\x12\x0e\n\x06mRecNo\x18\x04 \x01(\t\x12\x0e\n\x06sRecNo\x18\x05 \x01(\t\x12\x16\n\x0e\x66ilterNameList\x18\x06 \x01(\t\"%\n\x13JoinRealizeResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"2\n\x0bLoadRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\ttableName\x18\x02 \x01(\t\"\x1f\n\x0cLoadResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"L\n\x11MoveFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterFrom\x18\x02 \x01(\t\x12\x10\n\x08\x66ilterTo\x18\x03 \x01(\t\"$\n\x12MoveFilterResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"8\n\rRenameRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x14\n\x0cnewTableName\x18\x02 \x01(\t\" \n\x0eRenameResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"S\n\x13RenameFilterRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\x15\n\rnewFilterName\x18\x03 \x01(\t\"&\n\x14RenameFilterResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"2\n\x0bSaveRequest\x12\x10\n\x08\x66ilePath\x18\x01 \x01(\t\x12\x11\n\ttableName\x18\x02 \x01(\t\"\x1e\n\x0cSaveResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"X\n\rSearchRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\r\n\x05setID\x18\x03 \x01(\x04\x12\x11\n\tsrcString\x18\x04 \x01(\t\" \n\x0eSearchResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"D\n\rSetANDRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\" \n\x0eSetANDResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"F\n\x11SetCommentRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x0f\n\x07\x63mntStr\x18\x03 \x01(\t\"$\n\x12SetCommentResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"4\n\x10SetDeleteRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\"#\n\x11SetDeleteResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"D\n\rSetNOTRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\" \n\x0eSetNOTResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"C\n\x0cSetORRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\"\x1f\n\rSetORResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"D\n\rSetSUBRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdestSetID\x18\x03 \x01(\x04\" \n\x0eSetSUBResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"U\n\x0bSortRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x12\n\nfilterName\x18\x02 \x01(\t\x12\r\n\x05setID\x18\x03 \x01(\x04\x12\x10\n\x08sortType\x18\x04 \x01(\t\"\x1e\n\x0cSortResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\xc9\x01\n\x10TextWriteRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\x11\n\tdelimiter\x18\x02 \x01(\t\x12\x10\n\x08\x66ilePath\x18\x03 \x01(\t\x12\x10\n\x08\x66ileName\x18\x04 \x01(\t\x12\x10\n\x08writeTop\x18\x05 \x01(\x03\x12\x13\n\x0bwriteBottom\x18\x06 \x01(\x03\x12\x11\n\twriteLeft\x18\x07 \x01(\x03\x12\x12\n\nwriteRight\x18\x08 \x01(\x03\x12\x0e\n\x06header\x18\t \x01(\t\x12\r\n\x05setID\x18\n \x01(\x04\"#\n\x11TextWriteResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\"\xdd\x01\n\x0cUnionRequest\x12\x14\n\x0cnewTableName\x18\x01 \x01(\t\x12\x12\n\ntableName1\x18\x02 \x01(\t\x12\x12\n\ntableName2\x18\x03 \x01(\t\x12\x0e\n\x06setID1\x18\x04 \x01(\x04\x12\x0e\n\x06setID2\x18\x05 \x01(\x04\x12\x12\n\nfilterIDs1\x18\x06 \x01(\t\x12\x12\n\nfilterIDs2\x18\x07 \x01(\t\x12\x16\n\x0eincludeTableID\x18\x08 \x01(\t\x12\x17\n\x0fincludeRecordNo\x18\t \x01(\t\x12\x16\n\x0e\x64\x65leteOriginal\x18\n \x01(\t\" \n\rUnionResponse\x12\x0f\n\x07tableID\x18\x01 \x01(\x03\"U\n\x0bXSumRequest\x12\x11\n\ttableName\x18\x01 \x01(\t\x12\r\n\x05setID\x18\x02 \x01(\x04\x12\x11\n\tdItemList\x18\x03 \x01(\t\x12\x11\n\tmItemList\x18\x04 \x01(\t\"\x1e\n\x0cXSumResponse\x12\x0e\n\x06result\x18\x01 \x01(\x03\x32\x81\x16\n\nDataSource\x12T\n\rAddRealFilter\x12\x1f.turbodata.AddRealFilterRequest\x1a .turbodata.AddRealFilterResponse\"\x00\x12\x39\n\x04\x43\x61lc\x12\x16.turbodata.CalcRequest\x1a\x17.turbodata.CalcResponse\"\x00\x12\x42\n\x07\x43\x61talog\x12\x19.turbodata.CatalogRequest\x1a\x1a.turbodata.CatalogResponse\"\x00\x12K\n\nCategorize\x12\x1c.turbodata.CategorizeRequest\x1a\x1d.turbodata.CategorizeResponse\"\x00\x12\x42\n\x07\x43learWS\x12\x19.turbodata.ClearWSRequest\x1a\x1a.turbodata.ClearWSResponse\"\x00\x12\x45\n\x08\x43ondense\x12\x1a.turbodata.CondenseRequest\x1a\x1b.turbodata.CondenseResponse\"\x00\x12K\n\nCreateJoin\x12\x1c.turbodata.CreateJoinRequest\x1a\x1d.turbodata.CreateJoinResponse\"\x00\x12N\n\x0b\x43reateTable\x12\x1d.turbodata.CreateTableRequest\x1a\x1e.turbodata.CreateTableResponse\"\x00\x12H\n\tDBCodeSet\x12\x1b.turbodata.DBCodeSetRequest\x1a\x1c.turbodata.DBCodeSetResponse\"\x00\x12?\n\x06\x44\x42Load\x12\x18.turbodata.DBLoadRequest\x1a\x19.turbodata.DBLoadResponse\"\x00\x12?\n\x06\x44\x42Save\x12\x18.turbodata.DBSaveRequest\x1a\x19.turbodata.DBSaveResponse\"\x00\x12Z\n\x0f\x44\x65lAllSubTables\x12!.turbodata.DelAllSubTablesRequest\x1a\".turbodata.DelAllSubTablesResponse\"\x00\x12H\n\tDeleteRow\x12\x1b.turbodata.DeleteRowRequest\x1a\x1c.turbodata.DeleteRowResponse\"\x00\x12H\n\tDelFilter\x12\x1b.turbodata.DelFilterRequest\x1a\x1c.turbodata.DelFilterResponse\"\x00\x12\x39\n\x04\x44rop\x12\x16.turbodata.DropRequest\x1a\x17.turbodata.DropResponse\"\x00\x12K\n\nDuplFilter\x12\x1c.turbodata.DuplFilterRequest\x1a\x1d.turbodata.DuplFilterResponse\"\x00\x12W\n\x0e\x44uplicateTable\x12 .turbodata.DuplicateTableRequest\x1a!.turbodata.DuplicateTableResponse\"\x00\x12Z\n\x0f\x45xtractSubTable\x12!.turbodata.ExtractSubTableRequest\x1a\".turbodata.ExtractSubTableResponse\"\x00\x12T\n\rExtractUnique\x12\x1f.turbodata.ExtractUniqueRequest\x1a .turbodata.ExtractUniqueResponse\"\x00\x12\x39\n\x04\x46ill\x12\x16.turbodata.FillRequest\x1a\x17.turbodata.FillResponse\"\x00\x12W\n\x0e\x46ilterTransfer\x12 .turbodata.FilterTransferRequest\x1a!.turbodata.FilterTransferResponse\"\x00\x12H\n\tInsertRow\x12\x1b.turbodata.InsertRowRequest\x1a\x1c.turbodata.InsertRowResponse\"\x00\x12N\n\x0bJoinRealize\x12\x1d.turbodata.JoinRealizeRequest\x1a\x1e.turbodata.JoinRealizeResponse\"\x00\x12\x39\n\x04Load\x12\x16.turbodata.LoadRequest\x1a\x17.turbodata.LoadResponse\"\x00\x12K\n\nMoveFilter\x12\x1c.turbodata.MoveFilterRequest\x1a\x1d.turbodata.MoveFilterResponse\"\x00\x12?\n\x06Rename\x12\x18.turbodata.RenameRequest\x1a\x19.turbodata.RenameResponse\"\x00\x12Q\n\x0cRenameFilter\x12\x1e.turbodata.RenameFilterRequest\x1a\x1f.turbodata.RenameFilterResponse\"\x00\x12\x39\n\x04Save\x12\x16.turbodata.SaveRequest\x1a\x17.turbodata.SaveResponse\"\x00\x12?\n\x06Search\x12\x18.turbodata.SearchRequest\x1a\x19.turbodata.SearchResponse\"\x00\x12?\n\x06SetAND\x12\x18.turbodata.SetANDRequest\x1a\x19.turbodata.SetANDResponse\"\x00\x12K\n\nSetComment\x12\x1c.turbodata.SetCommentRequest\x1a\x1d.turbodata.SetCommentResponse\"\x00\x12H\n\tSetDelete\x12\x1b.turbodata.SetDeleteRequest\x1a\x1c.turbodata.SetDeleteResponse\"\x00\x12?\n\x06SetNOT\x12\x18.turbodata.SetNOTRequest\x1a\x19.turbodata.SetNOTResponse\"\x00\x12<\n\x05SetOR\x12\x17.turbodata.SetORRequest\x1a\x18.turbodata.SetORResponse\"\x00\x12?\n\x06SetSUB\x12\x18.turbodata.SetSUBRequest\x1a\x19.turbodata.SetSUBResponse\"\x00\x12\x39\n\x04Sort\x12\x16.turbodata.SortRequest\x1a\x17.turbodata.SortResponse\"\x00\x12H\n\tTextWrite\x12\x1b.turbodata.TextWriteRequest\x1a\x1c.turbodata.TextWriteResponse\"\x00\x12<\n\x05Union\x12\x17.turbodata.UnionRequest\x1a\x18.turbodata.UnionResponse\"\x00\x12\x39\n\x04XSum\x12\x16.turbodata.XSumRequest\x1a\x17.turbodata.XSumResponse\"\x00\x62\x06proto3')
 )
 
 
@@ -3742,18 +3742,18 @@ _sym_db.RegisterMessage(XSumResponse)
 
 
 
-_DATASTORE = _descriptor.ServiceDescriptor(
-  name='DataStore',
-  full_name='turbodata.DataStore',
+_DATASOURCE = _descriptor.ServiceDescriptor(
+  name='DataSource',
+  full_name='turbodata.DataSource',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
   serialized_start=4782,
-  serialized_end=7598,
+  serialized_end=7599,
   methods=[
   _descriptor.MethodDescriptor(
     name='AddRealFilter',
-    full_name='turbodata.DataStore.AddRealFilter',
+    full_name='turbodata.DataSource.AddRealFilter',
     index=0,
     containing_service=None,
     input_type=_ADDREALFILTERREQUEST,
@@ -3762,7 +3762,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Calc',
-    full_name='turbodata.DataStore.Calc',
+    full_name='turbodata.DataSource.Calc',
     index=1,
     containing_service=None,
     input_type=_CALCREQUEST,
@@ -3771,7 +3771,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Catalog',
-    full_name='turbodata.DataStore.Catalog',
+    full_name='turbodata.DataSource.Catalog',
     index=2,
     containing_service=None,
     input_type=_CATALOGREQUEST,
@@ -3780,7 +3780,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Categorize',
-    full_name='turbodata.DataStore.Categorize',
+    full_name='turbodata.DataSource.Categorize',
     index=3,
     containing_service=None,
     input_type=_CATEGORIZEREQUEST,
@@ -3789,7 +3789,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='ClearWS',
-    full_name='turbodata.DataStore.ClearWS',
+    full_name='turbodata.DataSource.ClearWS',
     index=4,
     containing_service=None,
     input_type=_CLEARWSREQUEST,
@@ -3798,7 +3798,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Condense',
-    full_name='turbodata.DataStore.Condense',
+    full_name='turbodata.DataSource.Condense',
     index=5,
     containing_service=None,
     input_type=_CONDENSEREQUEST,
@@ -3807,7 +3807,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='CreateJoin',
-    full_name='turbodata.DataStore.CreateJoin',
+    full_name='turbodata.DataSource.CreateJoin',
     index=6,
     containing_service=None,
     input_type=_CREATEJOINREQUEST,
@@ -3816,7 +3816,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='CreateTable',
-    full_name='turbodata.DataStore.CreateTable',
+    full_name='turbodata.DataSource.CreateTable',
     index=7,
     containing_service=None,
     input_type=_CREATETABLEREQUEST,
@@ -3825,7 +3825,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DBCodeSet',
-    full_name='turbodata.DataStore.DBCodeSet',
+    full_name='turbodata.DataSource.DBCodeSet',
     index=8,
     containing_service=None,
     input_type=_DBCODESETREQUEST,
@@ -3834,7 +3834,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DBLoad',
-    full_name='turbodata.DataStore.DBLoad',
+    full_name='turbodata.DataSource.DBLoad',
     index=9,
     containing_service=None,
     input_type=_DBLOADREQUEST,
@@ -3843,7 +3843,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DBSave',
-    full_name='turbodata.DataStore.DBSave',
+    full_name='turbodata.DataSource.DBSave',
     index=10,
     containing_service=None,
     input_type=_DBSAVEREQUEST,
@@ -3852,7 +3852,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DelAllSubTables',
-    full_name='turbodata.DataStore.DelAllSubTables',
+    full_name='turbodata.DataSource.DelAllSubTables',
     index=11,
     containing_service=None,
     input_type=_DELALLSUBTABLESREQUEST,
@@ -3861,7 +3861,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DeleteRow',
-    full_name='turbodata.DataStore.DeleteRow',
+    full_name='turbodata.DataSource.DeleteRow',
     index=12,
     containing_service=None,
     input_type=_DELETEROWREQUEST,
@@ -3870,7 +3870,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DelFilter',
-    full_name='turbodata.DataStore.DelFilter',
+    full_name='turbodata.DataSource.DelFilter',
     index=13,
     containing_service=None,
     input_type=_DELFILTERREQUEST,
@@ -3879,7 +3879,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Drop',
-    full_name='turbodata.DataStore.Drop',
+    full_name='turbodata.DataSource.Drop',
     index=14,
     containing_service=None,
     input_type=_DROPREQUEST,
@@ -3888,7 +3888,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DuplFilter',
-    full_name='turbodata.DataStore.DuplFilter',
+    full_name='turbodata.DataSource.DuplFilter',
     index=15,
     containing_service=None,
     input_type=_DUPLFILTERREQUEST,
@@ -3897,7 +3897,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DuplicateTable',
-    full_name='turbodata.DataStore.DuplicateTable',
+    full_name='turbodata.DataSource.DuplicateTable',
     index=16,
     containing_service=None,
     input_type=_DUPLICATETABLEREQUEST,
@@ -3906,7 +3906,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='ExtractSubTable',
-    full_name='turbodata.DataStore.ExtractSubTable',
+    full_name='turbodata.DataSource.ExtractSubTable',
     index=17,
     containing_service=None,
     input_type=_EXTRACTSUBTABLEREQUEST,
@@ -3915,7 +3915,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='ExtractUnique',
-    full_name='turbodata.DataStore.ExtractUnique',
+    full_name='turbodata.DataSource.ExtractUnique',
     index=18,
     containing_service=None,
     input_type=_EXTRACTUNIQUEREQUEST,
@@ -3924,7 +3924,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Fill',
-    full_name='turbodata.DataStore.Fill',
+    full_name='turbodata.DataSource.Fill',
     index=19,
     containing_service=None,
     input_type=_FILLREQUEST,
@@ -3933,7 +3933,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='FilterTransfer',
-    full_name='turbodata.DataStore.FilterTransfer',
+    full_name='turbodata.DataSource.FilterTransfer',
     index=20,
     containing_service=None,
     input_type=_FILTERTRANSFERREQUEST,
@@ -3942,7 +3942,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='InsertRow',
-    full_name='turbodata.DataStore.InsertRow',
+    full_name='turbodata.DataSource.InsertRow',
     index=21,
     containing_service=None,
     input_type=_INSERTROWREQUEST,
@@ -3951,7 +3951,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='JoinRealize',
-    full_name='turbodata.DataStore.JoinRealize',
+    full_name='turbodata.DataSource.JoinRealize',
     index=22,
     containing_service=None,
     input_type=_JOINREALIZEREQUEST,
@@ -3960,7 +3960,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Load',
-    full_name='turbodata.DataStore.Load',
+    full_name='turbodata.DataSource.Load',
     index=23,
     containing_service=None,
     input_type=_LOADREQUEST,
@@ -3969,7 +3969,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='MoveFilter',
-    full_name='turbodata.DataStore.MoveFilter',
+    full_name='turbodata.DataSource.MoveFilter',
     index=24,
     containing_service=None,
     input_type=_MOVEFILTERREQUEST,
@@ -3978,7 +3978,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Rename',
-    full_name='turbodata.DataStore.Rename',
+    full_name='turbodata.DataSource.Rename',
     index=25,
     containing_service=None,
     input_type=_RENAMEREQUEST,
@@ -3987,7 +3987,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='RenameFilter',
-    full_name='turbodata.DataStore.RenameFilter',
+    full_name='turbodata.DataSource.RenameFilter',
     index=26,
     containing_service=None,
     input_type=_RENAMEFILTERREQUEST,
@@ -3996,7 +3996,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Save',
-    full_name='turbodata.DataStore.Save',
+    full_name='turbodata.DataSource.Save',
     index=27,
     containing_service=None,
     input_type=_SAVEREQUEST,
@@ -4005,7 +4005,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Search',
-    full_name='turbodata.DataStore.Search',
+    full_name='turbodata.DataSource.Search',
     index=28,
     containing_service=None,
     input_type=_SEARCHREQUEST,
@@ -4014,7 +4014,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='SetAND',
-    full_name='turbodata.DataStore.SetAND',
+    full_name='turbodata.DataSource.SetAND',
     index=29,
     containing_service=None,
     input_type=_SETANDREQUEST,
@@ -4023,7 +4023,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='SetComment',
-    full_name='turbodata.DataStore.SetComment',
+    full_name='turbodata.DataSource.SetComment',
     index=30,
     containing_service=None,
     input_type=_SETCOMMENTREQUEST,
@@ -4032,7 +4032,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='SetDelete',
-    full_name='turbodata.DataStore.SetDelete',
+    full_name='turbodata.DataSource.SetDelete',
     index=31,
     containing_service=None,
     input_type=_SETDELETEREQUEST,
@@ -4041,7 +4041,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='SetNOT',
-    full_name='turbodata.DataStore.SetNOT',
+    full_name='turbodata.DataSource.SetNOT',
     index=32,
     containing_service=None,
     input_type=_SETNOTREQUEST,
@@ -4050,7 +4050,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='SetOR',
-    full_name='turbodata.DataStore.SetOR',
+    full_name='turbodata.DataSource.SetOR',
     index=33,
     containing_service=None,
     input_type=_SETORREQUEST,
@@ -4059,7 +4059,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='SetSUB',
-    full_name='turbodata.DataStore.SetSUB',
+    full_name='turbodata.DataSource.SetSUB',
     index=34,
     containing_service=None,
     input_type=_SETSUBREQUEST,
@@ -4068,7 +4068,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Sort',
-    full_name='turbodata.DataStore.Sort',
+    full_name='turbodata.DataSource.Sort',
     index=35,
     containing_service=None,
     input_type=_SORTREQUEST,
@@ -4077,7 +4077,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='TextWrite',
-    full_name='turbodata.DataStore.TextWrite',
+    full_name='turbodata.DataSource.TextWrite',
     index=36,
     containing_service=None,
     input_type=_TEXTWRITEREQUEST,
@@ -4086,7 +4086,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='Union',
-    full_name='turbodata.DataStore.Union',
+    full_name='turbodata.DataSource.Union',
     index=37,
     containing_service=None,
     input_type=_UNIONREQUEST,
@@ -4095,7 +4095,7 @@ _DATASTORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='XSum',
-    full_name='turbodata.DataStore.XSum',
+    full_name='turbodata.DataSource.XSum',
     index=38,
     containing_service=None,
     input_type=_XSUMREQUEST,
@@ -4103,8 +4103,8 @@ _DATASTORE = _descriptor.ServiceDescriptor(
     serialized_options=None,
   ),
 ])
-_sym_db.RegisterServiceDescriptor(_DATASTORE)
+_sym_db.RegisterServiceDescriptor(_DATASOURCE)
 
-DESCRIPTOR.services_by_name['DataStore'] = _DATASTORE
+DESCRIPTOR.services_by_name['DataSource'] = _DATASOURCE
 
 # @@protoc_insertion_point(module_scope)
