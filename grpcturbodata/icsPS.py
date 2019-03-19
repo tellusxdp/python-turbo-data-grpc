@@ -54,7 +54,7 @@ class mapPSEngine:
         if not address:
             address = os.environ.get("TURBODATA_HOST", "localhost:50051")
         self.channel = grpc.insecure_channel(address)
-        self.stub = pb2_grpc.DataStoreStub(self.channel)
+        self.stub = pb2_grpc.DataSourceStub(self.channel)
 
     def AddRealFilter(self, sTableName, sAddPosition, sNewFilterName, sFilterType, sFilePath, sFileName):
         request = pb2.AddRealFilterRequest(
